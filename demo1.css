@@ -10,7 +10,7 @@ body {
     background-repeat:no-repeat;
     background-position: right top;
     background-attachment:fixed;*/
-    background-image:url("../kuvat/tumma.jpg");
+    background-image:url("tumma.jpg");
     background-size:100%;
     background-attachment:fixed;
     color: #000000;
