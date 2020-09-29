@@ -10,17 +10,17 @@
 <body>
 
     <button onclick="topFunction()" id="top" title="Go to top">Top</button>
+    <header>
+        <ul class="navi">
+            <li class="navi"><a href="#kalatori">Kalatori</a></li>
+            <li class="navi"><a href="#markkinat">Markkinat</a></li>
+            <li class="navi"><a href="#hinnasto">Hinnasto</a></li>
+            <li class="navi"><a href="#yhteys">Ota Yhteyttä</a></li>
+            <li class="navi"><a href="#sijainti">Sijainti</a></li>
+        </ul>
+    </header>
 
-    <ul>
-        <li><a href="#kalatori">Kalatori</a></li>
-        <li><a href="#markkinat">Markkinat</a></li>
-        <li><a href="#hinnasto">Hinnasto</a></li>
-        <li><a href="#yhteys">Ota Yhteyttä</a></li>
-        <li><a href="#sijainti">Sijainti</a></li>
-    </ul>
-
-
-<section id="kalatori">
+    <section id="kalatori">
     <a name ="kalatori"><h1>Kalatori</h1></a>
     <img src="./kuvat/kala.jpg" alt="kala"><br>
     Jem Sahagunin kuvat
@@ -38,20 +38,31 @@
     <ul>
         <li><del>Kevätmarkkinat lauantai 11.4. klo 7–16</del></li>
         <li><del>Juhannusmarkkinat tiistai 16.6. klo 7–15<del></li>
-        <li>Elomarkkinat tiistai 17.8. klo 7–15</li>
+        <li><del>Elomarkkinat tiistai 17.8. klo 7–15</del></li>
         <li>tiistai 13.10. klo 7–15</li>
         <li>Joulumarkkinat tiistai 15.12. klo 7–15</li>
     </ul>
+    <div id="kuvat"></div>
+    <img src="./Kuvat/mustekala.jpg" alt="mustekala" class="round">
+    <img src="./Kuvat/pienikala.jpg" alt="pieni kala" class="round">
+    <img src="./Kuvat/rapu.jpg" alt="rapu" class="round">
+    </div>
 
-<img src="./Kuvat/mustekala.jpg" alt="mustekala"><br>
-<img src="./Kuvat/pienikala.jpg" alt="pieni kala"><br>
-<img src="./Kuvat/rapu.jpg" alt="rapu"><br>
     </section>
 
     <section id="hinnasto">
-    <a name="hinnasto"><h3>Hinnasto</h3></a>
-    <img src="./kuvat/tori.jpg" alt="tori"><br>
-    myyntipaikat
+        <div id="hintaalue"></div>
+            <a name="hinnasto"><h3>Hinnasto</h3></a>
+
+            <div id="paikkakartta">
+                <p>
+                    <img src="./kuvat/tori.jpg" alt="tori"><br>
+                    Paikkakartta
+                </p>
+            </div>
+        </div>
+
+    <div id="hintataulukko">
     <table>
         <tr> <!--otsikkorivi-->
             <th>Tunnus</th> <!-- table head = th-->
@@ -160,6 +171,7 @@
 
         </form>
     </section>
+</div>
 
     <section id="sijainti">
     <a name= "sijainti"><h3>Sijainti</h3></a>
