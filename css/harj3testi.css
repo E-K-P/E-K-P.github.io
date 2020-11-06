@@ -33,11 +33,15 @@ footer {
 .left-sidebar {
     background: white;
 }
-.container,
-.content {
-    display: flex;
-    flex-direction: column;
+.container {
+    display:flex;
 }
+
+.content {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 article {
     flex: 4;
     order: 1;
@@ -52,12 +56,20 @@ figure {
     justify-content: center;
     background:burlywood;
 }
-@media all and (min-width: 758px) {
-    .content {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+aside {
+    order: 3;
+    flex:1;
+}
+img {
+    width:100%;
+}
 
+@media all and (max-width: 758px) {
+    .container,
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
     article {
         flex: 4;
         order: 1;
@@ -72,10 +84,30 @@ figure {
         justify-content: center;
         background:burlywood;
     }
-    aside {
-        order: 3;
-        flex:1;
+    aside{
+        display:none;
     }
-    img {
-        width:100%;
-    }}
+}
+
+@media all and (max-width:600px) {
+    .container,
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    article {
+        flex: 1;
+        order: 1;
+        min-height: 88.5vh;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    figure {
+              display:none;
+    }
+    aside{
+        display:none;
+    }
+}
+
