@@ -17,6 +17,9 @@ article {
 figure {
     background: white;
 }
+aside {
+    display:none;
+}
 
 body {
     color: black;
@@ -75,6 +78,7 @@ figure {
     aside {
         order: 3;
         flex:1;
+        display: block;
     }
     img {
         width:100%;
