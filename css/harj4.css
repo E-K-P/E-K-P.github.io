@@ -1,55 +1,164 @@
-* {
-    box-sizing :border-box;
-    padding: 0;
-    margin: 0;
-}
 body {
-    background-color: white;
+    background-color:rgb(241, 241, 241)
 }
 #pingpong {
     opacity: 1;
 }
 header {
-    background-color:grey;
+    background-color:rgb(58, 64, 90);
     text-align:right;
-    margin-top: 5pt;
-    height: 3em;
+    height: 4em;
 }
 li {
     display:inline;
-    margin-right:30pt;
-    font-family: fantasy;
+    margin-right:40pt;
+    margin-top:20pt;
+    font-family: 'Segoe UI';
     overflow: hidden;
-    font-size: 20pt;
+    font-size: 15pt;
 }
 .container{
+flex-wrap: nowrap;
 display:flex;
 flex-direction: row;  
 }
 
-
-
 .LoremIpsum1 {
+    display:flex;
     order:1;
     flex:2;
+    margin-left: 5em;
+    margin-bottom: 1.5em;
 }
 .LoremIpsum2 {
+    flex-wrap: nowrap;
     order:4;
     flex:2;
+    margin-right: 6em;
+    margin-bottom: 1.5em;
 }
 .LoremIpsum3 {
+    flex-wrap: nowrap;
     order:5;
     flex:2;
+    margin-left: 6em;
+    margin-bottom: 1.5em;
 }
 .lokki1 {
+    display:flex;
     order:2;
     flex:1;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-bottom: 1.5em;
 }
 .lokki2 {
+    flex-wrap: nowrap;
     order:3;
     flex:1;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-bottom: 1.5em;
 }
 .lokki3 {
+    flex-wrap: nowrap;
     order:6;
     flex:1;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-bottom: 1.5em;
+}
+.lokkikopla{
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 14em;
+    margin-right: 14em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.lokkikopla1{
+    width:298;
+    height:260;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.lokkikopla2{
+    width:298;
+    height:260;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.lokkikopla3{
+    width:298;
+    height:260;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.kirja {
+    position: relative;
+    width: 118em;
+    height: 45em;
+    z-index: -1;
+}
+.opacity{
+    position: absolute;
+    flex: auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 118em;
+    height: 15em;
+    background-color: rgb(58, 64, 90);opacity: 0.8;
+    bottom:15.5%;
+    left:0.48%;
+    color: white;
+    z-index: 2;
+}
+.fullcolor{
+    background-color:rgb(58, 64, 90);
+    position: absolute;
+    width: 118em;
+    height: 45em;
+    opacity: 0.6;
+    left:0.48%;
+    bottom:15.5%;
+}
+p {
+    flex-wrap: nowrap;
+    flex: 2;
+    flex-direction: row;
+    font-size:15pt;
+}
+
+a.link {
+    text-decoration: none;
+    color: rgb(249,222,201);
+}
+
+.fix {
+    margin-left: 5em;
+}
+.fix2 {
+    margin-left: 5em;
+}
+
+footer{
+    top: 20%;
+    position: relative;
+    background-color:rgb(58, 64, 90);
+    height: 20em;
+    z-index: -1;
+}
+
+.bottomtext {
+    font-size:13pt;
+    position: relative;
+    text-align: center;
+    color: rgb(249,222,201);
+    z-index: 3;
 }
