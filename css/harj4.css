@@ -9,14 +9,6 @@ header {
     text-align:right;
     height: 4em;
 }
-li {
-    display:inline;
-    margin-right:40pt;
-    margin-top:20pt;
-    font-family: 'Segoe UI';
-    overflow: hidden;
-    font-size: 15pt;
-}
 .container{
 flex-wrap: nowrap;
 display:flex;
@@ -69,6 +61,7 @@ flex-direction: row;
     margin-bottom: 1.5em;
 }
 .lokkikopla{
+    display:flex;
     flex-wrap: nowrap;
     flex-direction: row;
     margin-left: 14em;
@@ -81,30 +74,33 @@ flex-direction: row;
     height:260;
     flex-wrap: nowrap;
     flex-direction:column;
-    margin-left: 4em;
-    margin-right: 4em;
+    border-radius: 10px;
 }
 .lokkikopla2{
     width:298;
     height:260;
     flex-wrap: nowrap;
     flex-direction:column;
-    margin-left: 4em;
-    margin-right: 4em;
+    border-radius: 10px;
 }
 .lokkikopla3{
     width:298;
     height:260;
     flex-wrap: nowrap;
     flex-direction:column;
-    margin-left: 4em;
-    margin-right: 4em;
+    border-radius: 10px;
 }
 .kirja {
     position: relative;
     width: 118em;
     height: 45em;
     z-index: -1;
+}
+.logo {
+    position: absolute;
+    bottom: 83%;
+    left: 30;
+    z-index: 5;
 }
 .opacity{
     position: absolute;
@@ -156,9 +152,65 @@ footer{
 }
 
 .bottomtext {
-    font-size:13pt;
+    font-family: 'Segoe UI';
+    font-size:14pt;
     position: relative;
     text-align: center;
     color: rgb(249,222,201);
     z-index: 3;
+}
+
+li {
+    display:inline;
+    margin-right:40pt;
+    margin-top:20pt;
+    font-family: 'Segoe UI';
+    overflow: hidden;
+    font-size: 15pt;
+}
+
+ul {
+    padding:0px;
+    margin:0px;
+}
+a {
+    color: rgb(249,222,201);
+    text-decoration:none;
+    padding: 8px;
+}
+
+.box {
+    width: 298px;
+    height: 600px;
+    margin-left: 7em;
+    box-shadow: 10px 10px 10px lightgray;
+    text-align: center;
+    border: gray;
+    border-radius: 10px;
+}
+
+.boxtext {
+    font-family: 'Segoe UI';
+    font-size: 10pt;
+}
+
+.luelisaa {
+    position: relative;
+    bottom:-24%;
+    width: 200px;
+    height: 65px;
+    border-radius: 15px;
+}
+.luelisaa2 {
+    bottom:-24%;
+    width: 140px;
+    height: 40px;
+    border-radius: 15px;
+    margin-left: 9em;
+}
+.luelisaa2fix{
+    bottom:-24%;
+    width: 140px;
+    height: 40px;
+    border-radius: 15px;
 }
