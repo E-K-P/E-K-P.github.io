@@ -1,0 +1,57 @@
+body {
+    background-image: url(../Kuvat/Omatyö_Kuvat/STATICTAUSTA.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 2000px 1000px;
+}
+
+.whiteshade {
+    width: 900px;
+    height: 950px;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: -1;
+    margin-left: 29em;
+    box-shadow: 5px 4px 3px;
+    border-radius: 5px;
+}
+
+form {
+    margin-left: 32em;
+    padding-top: 2em;
+}
+
+input[type=text], select {
+    width: 60em;
+    height: 4em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: 0.5px -0.5px 1px;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 20em;
+    height: 5em;
+    cursor: pointer;
+    background-color: rgb(85, 133, 71);
+    border-radius: 3px;
+    color: whitesmoke;
+}
+
+label {
+    font-size: 16pt;
+}
+
+p {
+    font-size: 16pt;
+}
+
+input[type=number] {
+    width: 60em;
+    height: 4em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: 0.5px -0.5px 1px;
+    border-radius: 3px;
+}
